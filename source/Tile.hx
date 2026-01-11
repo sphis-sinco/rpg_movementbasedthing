@@ -32,20 +32,20 @@ class Tile extends FlxSprite
 	{
 		this.direction = direction;
 
-		this.color = 0xFFFFFFFF;
+		makeGraphic(DEFAULT_SIZE, DEFAULT_SIZE, 0xFFFFFFFF);
 
 		switch (this.direction)
 		{
 			case 0:
-				this.color = 0xFFFF00FF;
+				makeGraphic(DEFAULT_SIZE, DEFAULT_SIZE, 0xFFFF00FF);
 			case 1:
-				this.color = 0xFF00FFFF;
+				makeGraphic(DEFAULT_SIZE, DEFAULT_SIZE, 0xFF00FFFF);
 			case 2:
-				this.color = 0xFF00FF00;
+				makeGraphic(DEFAULT_SIZE, DEFAULT_SIZE, 0xFF00FF00);
 			case 3:
-				this.color = 0xFFFF0000;
+				makeGraphic(DEFAULT_SIZE, DEFAULT_SIZE, 0xFFFF0000);
 			default:
-				this.color = 0xFFFFFFFF;
+				makeGraphic(DEFAULT_SIZE, DEFAULT_SIZE, 0xFFFFFFFF);
 		};
 	}
 }
